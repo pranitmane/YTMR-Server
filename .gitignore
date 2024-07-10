@@ -22,3 +22,6 @@ yarn-error.log*
 
 # Mac system files
 .DS_Store
+
+#ssl cert
+ssl/
