@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
     }
 })
 app.get('/status', (req, res) => {
-    res.status(200).send('server is running')
+    let ip = getIPAddress()
+    res.status(200).send({serverIP:`http://${ip}:8080`})
 })
 
 
